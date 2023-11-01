@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YJ UI Enhancer",
+  "version": "1.0",
+  "description": "Enhance Yahoo! Japan UI",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://search.yahoo.co.jp/*"],
+      "css": ["style.css"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
